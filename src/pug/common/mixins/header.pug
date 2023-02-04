@@ -1,0 +1,21 @@
+include _burg
+include _nav
+
+mixin header(navContent, navClass='')
+    -var navClasses = "header__nav " + navClass
+    header.header
+        .header__content.container
+            .header__content-row
+                .header__name.header__name_desk.pre ШКОЛА испанского ЯЗЫКА &#10; «ЛаВИта» в петербурге
+                .header__contacts
+                    .contact-location Лиговский пр. 133 Е
+                    a.contact-phone(href="tel:+79111234567") +7 (911) 123-45-67
+                    a.contact-mail(href="mailto:lavita_school@gmail.com") lavita_school@gmail.com
+                .header__buttons
+                    button.header__btn.btn Запись на курсы
+            .header__content-row
+                a.logo.header__logo(href="index.html" tabindex="-1")
+                    img.logo__image-main(src="img/logo/logo.svg" alt="logo" width="60" height="52")
+                    .header__name.header__name_lap.pre ШКОЛА испанского ЯЗЫКА &#10; «ЛаВИта» в петербурге
+                +nav('nav', navContent,'headNav')(class=navClasses)
+                +burg('#headNav')(class="header-burg")

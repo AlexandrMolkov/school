@@ -1,0 +1,112 @@
+.about{
+    padding-top: 128px;
+    padding-bottom: 128px;
+
+    @media (max-width: $tablet){
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    
+    &__content{
+        padding-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    &__image{
+        max-width: 616px;
+        max-height: 613px;
+        width: 100%;
+        height: auto;
+        opacity: 0.05;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        @media (max-width: 1139px){
+            justify-content: center;
+        }
+
+        @media (max-width: 919px){
+           position: absolute;
+           top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+        }
+
+        img{
+            
+            width: 70%;
+            height: auto;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+
+    &__text-block{
+        position: relative;
+        max-width: 49.2%;
+        border: 10px solid $theme;
+        padding: 77px 80px 43px;
+
+        font-size: rem(18);
+        line-height: 140%;
+        margin-left: 108px;
+
+        @media (max-width: 919px){
+            max-width: 80%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        @media (max-width: $tablet){
+            max-width: 100%;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
+        @media (max-width: $mobileL){
+            padding-bottom: 30px;
+        }
+    }
+
+    &__title{
+        left: 50px;
+        top: -50px;
+        padding: 10px 30px;
+        background-color: #fff;
+        position: absolute;
+
+        @media (max-width: 1139px){
+            top: -84px;
+            max-width: 300px;
+        }
+
+        @media (max-width: $tablet){
+            max-width: 250px;
+        }
+
+        @media (max-width: 539px){
+            left: 20%;
+            transform: translateX(-20%);
+        }
+
+        @media (max-width: $mobileL){
+            max-width: 200px;
+        }
+    }
+
+    &__subtitle{
+        margin-bottom: 45px;
+    }
+    &__text{
+        margin-bottom: 24px;
+
+        @media (max-width: $tablet){
+            margin-bottom: 30px;
+        }
+    }
+
+    &__item{
+    }
+}

@@ -1,0 +1,105 @@
+.events{
+    padding-top: 126px;
+
+    @media (max-width: $laptop){
+        padding-top: 80px;
+    }
+    @media (max-width: $tablet){
+        padding-top: 60px;
+    }
+
+    &__title{
+        margin-bottom: 100px;  
+        
+        @media (max-width: $tablet){
+            margin-bottom: 80px;  
+        }
+    }
+
+
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+        
+        > * {
+            grid-column: span 4;
+        }
+        
+        @media (max-width: $laptop){
+        
+            > * {
+                grid-column: span 6;
+            }
+        }
+        @media (max-width: $tablet){
+            grid-template-columns: repeat(1, 1fr);
+            gap: 60px;
+            > * {
+                grid-column: span 1;
+            }
+        }
+    }
+
+}
+
+.event-item{
+    max-width: 416px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    @media (max-width: $tablet){
+        margin: 0 auto;
+    }
+
+    > * {
+        width: 100%;
+    }
+
+
+    &__content{
+        
+        padding: 0 22px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-start;
+
+        @media (max-width: $tablet){
+            padding: 0;
+        }
+    }
+
+    &__image-wrapper{
+        max-width: 100%;
+        width: 100%;
+
+        margin-bottom: 30px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title{
+        margin-bottom: 17px;
+        font-weight: 700;
+       font-size: rem(24);
+        line-height: 140%;
+    }
+    &__link{
+        font-weight: 700;
+        font-size: rem(20);
+        line-height: 140%;
+        padding: 14px 30px;
+        margin: 0;
+    }
+
+    &__text{
+        margin-bottom: 28px;   
+    }
+
+}
