@@ -233,9 +233,12 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+  gap: 5px;
   width: 100%;
   overflow: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__li {
@@ -1772,6 +1775,11 @@ body {
     height: 100%;
     padding-top: 150px;
     text-align: center;
+    gap: 40px;
+    overflow: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .header__nav .nav__link {
