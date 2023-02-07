@@ -167,7 +167,12 @@ $trigger: 1319px;
             min-width: 320px;
             height: 100%;
             padding-top: 150px;
-            text-align: center;
+            text-align: center;        
+            gap: 40px;
+            overflow: auto;
+            justify-content:flex-start;
+
+
         }
 
     }

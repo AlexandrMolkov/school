@@ -5,10 +5,11 @@
 
     &__ul {
         display: flex;
-        gap: 40px;
+        gap: 5px;
         width: 100%;
         overflow: auto;
-        //justify-content: space-between;
+        justify-content: space-between;
+
     }
     &__li {
         position: relative;
