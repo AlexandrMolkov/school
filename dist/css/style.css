@@ -233,11 +233,9 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 5px;
+  gap: 40px;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  overflow: auto;
 }
 
 .nav__li {
@@ -2094,10 +2092,6 @@ body {
 
   .tablet-hidden {
     display: none;
-  }
-
-  .header {
-    z-index: 1;
   }
 
   .header__btn.btn {
