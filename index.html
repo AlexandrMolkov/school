@@ -44,43 +44,34 @@
         <section class="hero">
           <div class="swiper hero__swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-hash="slide1">
                 <div class="hero__slide">
-                  <picture>
-                    <source srcset="img/slide.webp" type="image/webp"><img class="cover hero__slide-slide" src="img/slide.png" alt="питербург">
-                  </picture>
                   <div class="hero__slide-content">
-                    <div class="hero__slide-text-block">
+                    <div class="hero__slide-text-block" data-swiper-parallax="-600" data-swiper-parallax-duration="800">
                       <div class="hero__slide-text">ИДЕТ НАБОР НА ОБУЧЕНИЕ В ШКОЛУ "ЛАВИТА" В НЕВСКОМ РАЙОНЕ ПЕТЕРБУРГА! УСПЕЙ ЗАПИСАТЬСЯ!</div>
-                    </div><a class="hero__slide-btn btn" href="#">Подробнее</a>
+                    </div><a class="hero__slide-btn btn" href="#" data-swiper-parallax="-800" data-swiper-parallax-duration="800"> Подробнее</a>
                   </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-hash="slide2">
                 <div class="hero__slide">
-                  <picture>
-                    <source srcset="img/slide.webp" type="image/webp"><img class="cover hero__slide-slide" src="img/slide.png" alt="питербург">
-                  </picture>
                   <div class="hero__slide-content">
-                    <div class="hero__slide-text-block">
+                    <div class="hero__slide-text-block" data-swiper-parallax="-600" data-swiper-parallax-duration="800">
                       <div class="hero__slide-text">ИДЕТ НАБОР НА ОБУЧЕНИЕ В ШКОЛУ "ЛАВИТА" В НЕВСКОМ РАЙОНЕ ПЕТЕРБУРГА! УСПЕЙ ЗАПИСАТЬСЯ!</div>
-                    </div><a class="hero__slide-btn btn" href="#">Подробнее</a>
+                    </div><a class="hero__slide-btn btn" href="#" data-swiper-parallax="-800" data-swiper-parallax-duration="800"> Подробнее</a>
                   </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide" data-hash="slide3">
                 <div class="hero__slide">
-                  <picture>
-                    <source srcset="img/slide.webp" type="image/webp"><img class="cover hero__slide-slide" src="img/slide.png" alt="питербург">
-                  </picture>
                   <div class="hero__slide-content">
-                    <div class="hero__slide-text-block">
+                    <div class="hero__slide-text-block" data-swiper-parallax="-600" data-swiper-parallax-duration="800">
                       <div class="hero__slide-text">ИДЕТ НАБОР НА ОБУЧЕНИЕ В ШКОЛУ "ЛАВИТА" В НЕВСКОМ РАЙОНЕ ПЕТЕРБУРГА! УСПЕЙ ЗАПИСАТЬСЯ!</div>
-                    </div><a class="hero__slide-btn btn" href="#">Подробнее</a>
+                    </div><a class="hero__slide-btn btn" href="#" data-swiper-parallax="-800" data-swiper-parallax-duration="800">Подробнее</a>
                   </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
@@ -108,67 +99,242 @@
               <div class="price__duration pre">(учебный год с &#10; сентября по май)</div>
               <div class="price__duration pre">(учебный год с &#10; сентября по июнь)</div>
             </div>
-            <div class="price__row row options">
-              <button class="price__opt price__opt_cur pre">Испанский язык &#10; для детей</button>
-              <button class="price__opt pre">Испанский язык &#10; для взрослых</button>
-              <button class="price__opt pre">Индивидуальные занятия &#10; и минигруппы</button>
-              <button class="price__opt pre">Подготовка к &#10; международным экзаменам</button>
+            <div class="tabs">
+              <div class="price__row row options tabs__buttons">
+                <button class="tabs__button price__opt pre" data-target="#tab1">Испанский язык &#10; для детей</button>
+                <button class="tabs__button price__opt pre" data-target="#tab2">Испанский язык &#10; для взрослых</button>
+                <button class="tabs__button price__opt pre" data-target="#tab3">Индивидуальные занятия &#10; и минигруппы</button>
+                <button class="tabs__button price__opt pre" data-target="#tab4">Подготовка к &#10; международным экзаменам</button>
+              </div>
+              <div class="tabs__content" id="tab1">
+                <table class="table price__table">
+                  <tr>
+                    <th>Группы</th>
+                    <th>Интенсивность</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">16 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">16 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">16 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">16 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tabs__content" id="tab2">
+                <table class="table price__table">
+                  <tr>
+                    <th>Группы</th>
+                    <th>Интенсивность</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">18 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">18 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">18 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">18 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tabs__content" id="tab3">
+                <table class="table price__table">
+                  <tr>
+                    <th>Группы</th>
+                    <th>Интенсивность</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">22 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">22 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">22 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">22 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="tabs__content" id="tab4">
+                <table class="table price__table">
+                  <tr>
+                    <th>Группы</th>
+                    <th>Интенсивность</th>
+                    <th>Стоимость</th>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8-9 лет</td>
+                    <td> 
+                      <p>2 раза в неделю по 2 ак. часа</p>
+                      <p>17:00 - 18:30</p>
+                    </td>
+                    <td>
+                      <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
+                      <p>Оплата 3 раза в год</p>
+                      <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
-            <table class="table price__table">
-              <tr>
-                <th>Группы</th>
-                <th>Интенсивность</th>
-                <th>Стоимость</th>
-              </tr>
-              <tr>
-                <td>8-9 лет</td>
-                <td> 
-                  <p>2 раза в неделю по 2 ак. часа</p>
-                  <p>17:00 - 18:30</p>
-                </td>
-                <td>
-                  <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
-                  <p>Оплата 3 раза в год</p>
-                  <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
-                </td>
-              </tr>
-              <tr>
-                <td>8-9 лет</td>
-                <td> 
-                  <p>2 раза в неделю по 2 ак. часа</p>
-                  <p>17:00 - 18:30</p>
-                </td>
-                <td>
-                  <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
-                  <p>Оплата 3 раза в год</p>
-                  <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
-                </td>
-              </tr>
-              <tr>
-                <td>8-9 лет</td>
-                <td> 
-                  <p>2 раза в неделю по 2 ак. часа</p>
-                  <p>17:00 - 18:30</p>
-                </td>
-                <td>
-                  <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
-                  <p>Оплата 3 раза в год</p>
-                  <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
-                </td>
-              </tr>
-              <tr>
-                <td>8-9 лет</td>
-                <td> 
-                  <p>2 раза в неделю по 2 ак. часа</p>
-                  <p>17:00 - 18:30</p>
-                </td>
-                <td>
-                  <p><span class="price__cost">28 800 р.</span>  (1 ак. час = 600 р.) за 24 занятия</p>
-                  <p>Оплата 3 раза в год</p>
-                  <p>Стоимость обучения рассчитывается по фактическому количеству занятий, в соответствии с учебным планов</p>
-                </td>
-              </tr>
-            </table>
           </div>
         </section>
         <section class="exam">
